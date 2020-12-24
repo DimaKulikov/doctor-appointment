@@ -83,7 +83,8 @@ let appointmentInfo = {
   specialityID: '1',
   doctor: 'Иванов Иван Иванович',
   room: '216',
-  clinicID: '1'
+  clinicID: '1',
+  time: ''
 }
 
 //get appointment info from local storage on load
@@ -99,7 +100,7 @@ function updateInfo(event) {
   event.preventDefault();
   appointmentInfo.specialityID = inputSpeciality.value;
   appointmentInfo.doctor = inputDoctor.value;
-  time.textContent = inputTime.value.charAt(0) === '0' ? inputTime.value.substring(1) : inputTime.value;
+  appointmentInfo.time = inputTime.value.charAt(0) === '0' ? inputTime.value.substring(1) : inputTime.value;
   appointmentInfo.room = inputRoom.value;
   appointmentInfo.clinicID = inputClinic.value;
   renderInfo();  
@@ -108,11 +109,12 @@ function updateInfo(event) {
 }
 
 function renderInfo(){
-    doctor.textContent = appointmentInfo.doctor;
-    speciality.textContent = specialities[appointmentInfo.specialityID];
-    room.textContent = appointmentInfo.room;
-    clinicName.textContent = clinics[appointmentInfo.clinicID].name;
-    clinicType.textContent = clinics[appointmentInfo.clinicID].type;
+  doctor.textContent = appointmentInfo.doctor;
+  speciality.textContent = specialities[appointmentInfo.specialityID];
+  room.textContent = appointmentInfo.room;
+  clinicName.textContent = clinics[appointmentInfo.clinicID].name;
+  clinicType.textContent = clinics[appointmentInfo.clinicID].type;
+  time.textContent = appointmentInfo.time;
 }
 
 
