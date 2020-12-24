@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Запись на приём</title>
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="dev.css">
+</head>
+<body class="page">
+  <div class="loading-screen">
+    <div class="loading-screen__spinner"></div>
+  </div>
+  <header class="header">
+    <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="none" viewBox="0 0 32 32" id="emias-logo"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V30C0 31.1046 0.895431 32 2 32H30C31.1046 32 32 31.1046 32 30V2C32 0.895431 31.1046 0 30 0H2ZM4.2 3.2C3.64772 3.2 3.2 3.64772 3.2 4.2V27.8C3.2 28.3523 3.64772 28.8 4.2 28.8H27.8C28.3523 28.8 28.8 28.3523 28.8 27.8V4.2C28.8 3.64772 28.3523 3.2 27.8 3.2H4.2ZM7.34754 23.0596C7.34754 23.6118 7.79525 24.0596 8.34754 24.0596H23.4667V20.8357H10.7106V17.6279H20.2376V14.4069H10.7106V11.1643H23.4667V7.94044H8.34754C7.79525 7.94044 7.34754 8.38815 7.34754 8.94044V23.0596Z" fill="currentColor"></path></svg>
+    <div class="header__user">Екатерина</div>
+    <button class="menu-btn header__menu-btn"><div class="menu-btn__bars"></div></button>
+  </header>
+  <main class="main">
+    <section class="page__top">
+      <div class="splash">
+        <div class="splash__text-container">
+          <h2 class="splash__title">Если у вас симптомы ОРВИ, больше не нужно идти в поликлинику!</h2>
+          <p class="splash__subtitle">Удобнее вызвать врача на дом по телефону вашей поликлиники.</p>
+          <p class="splash__bottom-subtitle">Будьте здоровы!</p>          
+        </div>
+        <img src="./images/family.b69676.png" alt="" class="splash__image">
+      </div>
+      <h1 class="page__title">Запись к врачу</h1>
+    </section>
+    <section class="appointment-controls">
+      <div class="appointment-controls__date">
+        <button class="menu-btn menu-btn_bg">
+          <div class="menu-btn__bars menu-btn__bars_s"></div>
+        </button>
+        <button class="icon-btn"><svg class="icon-btn__icon icon-btn__icon_color_blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="calendar"><g id="calendar_icons/system/calendar" stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M51.2,2 L57.6,2 C61.1346224,2 64,4.5072054 64,7.6 L64,56.4 C64,59.4927946 61.1346224,62 57.6,62 L6.4,62 C2.8653776,62 4.328664e-16,59.4927946 0,56.4 L1.77635684e-15,7.6 C1.34349044e-15,4.5072054 2.8653776,2 6.4,2 L12.8,2 L12.8,9 C12.8,10.5463973 14.2326888,11.8 16,11.8 C17.7673112,11.8 19.2,10.5463973 19.2,9 L19.2,2 L44.8,2 L44.8,9 C44.8,10.5463973 46.2326888,11.8 48,11.8 C49.7673112,11.8 51.2,10.5463973 51.2,9 L51.2,2 Z M7.4,17.4 C6.84771525,17.4 6.4,17.8477153 6.4,18.4 L6.4,55.4 C6.4,55.9522847 6.84771525,56.4 7.4,56.4 L56.6,56.4 C57.1522847,56.4 57.6,55.9522847 57.6,55.4 L57.6,18.4 C57.6,17.8477153 57.1522847,17.4 56.6,17.4 L7.4,17.4 Z" id="calendar_Mask" fill-rule="nonzero"></path></g></svg></button>
+      </div>
+      <button class="appointment-controls__new button button_color_blue">Новая запись</button>
+      <div class="appointment-controls__menu">
+        <button class="icon-btn"><svg class="icon-btn__icon icon-btn__icon_color_blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="nav"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1V3C4 3.55228 3.55228 4 3 4H1C0.447715 4 0 3.55228 0 3V1ZM0 7C0 6.44772 0.447715 6 1 6H3C3.55228 6 4 6.44772 4 7V9C4 9.55229 3.55228 10 3 10H1C0.447715 10 0 9.55229 0 9V7ZM1 12C0.447715 12 0 12.4477 0 13V15C0 15.5523 0.447715 16 1 16H3C3.55228 16 4 15.5523 4 15V13C4 12.4477 3.55228 12 3 12H1ZM6 1C6 0.447715 6.44772 0 7 0H9C9.55229 0 10 0.447715 10 1V3C10 3.55228 9.55229 4 9 4H7C6.44772 4 6 3.55228 6 3V1ZM7 6C6.44772 6 6 6.44772 6 7V9C6 9.55229 6.44772 10 7 10H9C9.55229 10 10 9.55229 10 9V7C10 6.44772 9.55229 6 9 6H7ZM6 13C6 12.4477 6.44772 12 7 12H9C9.55229 12 10 12.4477 10 13V15C10 15.5523 9.55229 16 9 16H7C6.44772 16 6 15.5523 6 15V13ZM13 0C12.4477 0 12 0.447715 12 1V3C12 3.55228 12.4477 4 13 4H15C15.5523 4 16 3.55228 16 3V1C16 0.447715 15.5523 0 15 0H13ZM12 7C12 6.44772 12.4477 6 13 6H15C15.5523 6 16 6.44772 16 7V9C16 9.55229 15.5523 10 15 10H13C12.4477 10 12 9.55229 12 9V7ZM13 12C12.4477 12 12 12.4477 12 13V15C12 15.5523 12.4477 16 13 16H15C15.5523 16 16 15.5523 16 15V13C16 12.4477 15.5523 12 15 12H13Z"></path></svg></button>
+      </div>
+    </section>
+    <section class="appointment-details">
+      <h2 class="appointment-details__doc-speciality">Врач-стоматолог-терапевт</h2>
+      <p class="appointment-details__doc-name">Шахмаметова Юлия Адулмнировна</p>
+      <button class="button button_color_blue button_size_s appointment-details__button">Перенести</button>
+      <button class="button button_color_red button_size_s appointment-details__button">Отменить</button>
+      <h3 class="appointment-details__subtitle">Дата и время</h3>
+      <p class="appointment-details__text"><span class="appointment-details__date">Вторник, 12 января</span> в <span class="appointment-details__time">08:20</span></p>
+      <h3 class="appointment-details__subtitle">Кабинет</h3>
+      <p class="appointment-details__text appointment-details__room">4А</p>
+      <h3 class="appointment-details__subtitle appointment-details__clinic-type">Стоматологическая поликлиника</h3>
+      <p class="appointment-details__text appointment-details__clinic-name">ГАУЗ "СП № 22 ДЗМ"</p>
+      <button class="appointment-details__more-btn">Подробнее <svg class="appointment-details__more-icon" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+        xml:space="preserve">
+     <g>
+       <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+         c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+         c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+     </g>
+     
+     </svg>
+    </button>
+    <button class="icon-btn icon-btn_type_text appointment-details__button"><svg class="icon-btn__icon icon-btn__icon_color_black icon-btn__icon_type_text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="calendar"><g id="calendar_icons/system/calendar" stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M51.2,2 L57.6,2 C61.1346224,2 64,4.5072054 64,7.6 L64,56.4 C64,59.4927946 61.1346224,62 57.6,62 L6.4,62 C2.8653776,62 4.328664e-16,59.4927946 0,56.4 L1.77635684e-15,7.6 C1.34349044e-15,4.5072054 2.8653776,2 6.4,2 L12.8,2 L12.8,9 C12.8,10.5463973 14.2326888,11.8 16,11.8 C17.7673112,11.8 19.2,10.5463973 19.2,9 L19.2,2 L44.8,2 L44.8,9 C44.8,10.5463973 46.2326888,11.8 48,11.8 C49.7673112,11.8 51.2,10.5463973 51.2,9 L51.2,2 Z M7.4,17.4 C6.84771525,17.4 6.4,17.8477153 6.4,18.4 L6.4,55.4 C6.4,55.9522847 6.84771525,56.4 7.4,56.4 L56.6,56.4 C57.1522847,56.4 57.6,55.9522847 57.6,55.4 L57.6,18.4 C57.6,17.8477153 57.1522847,17.4 56.6,17.4 L7.4,17.4 Z" id="calendar_Mask" fill-rule="nonzero"></path></g></svg>Добавить в календарь</button>
+    <button class="icon-btn icon-btn_type_text appointment-details__button"><svg class="icon-btn__icon icon-btn__icon_color_black icon-btn__icon_type_text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="qrcode"><path d="M0 15.9996H7.2726V8.72696H0V15.9996ZM1.45441 10.1816H5.81803V14.5339H1.45441V10.1816ZM2.90901 11.636H4.3635V13.0907H2.90901V11.636ZM11.6359 14.5452H13.0907V15.9998H11.6359V14.5452ZM14.545 14.5452H15.9998V15.9998H14.545V14.5452ZM14.5451 10.1816V8.72696H15.9996V13.0907H11.6359V11.636H10.1816V15.9996H8.72696V8.72696H13.0907V10.1816H14.5451ZM0 7.27276V0H7.2726V7.27276H0ZM1.45441 1.45441V5.81803H5.81803V1.45441H1.45441ZM2.90901 2.90901H4.3635V4.36362H2.90901V2.90901ZM8.72696 0H15.9998V7.27276H8.72696V0ZM14.5451 5.81803V1.45441H10.1816V5.81803H14.5451ZM11.6359 2.90901H13.0907V4.36362H11.6359V2.90901Z"></path></svg>Талон на прием</button>
+    </section>
+  </main>
+  <footer class="footer page__footer">
+    <div class="footer__logo-container">
+      <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="emias-logo"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V30C0 31.1046 0.895431 32 2 32H30C31.1046 32 32 31.1046 32 30V2C32 0.895431 31.1046 0 30 0H2ZM4.2 3.2C3.64772 3.2 3.2 3.64772 3.2 4.2V27.8C3.2 28.3523 3.64772 28.8 4.2 28.8H27.8C28.3523 28.8 28.8 28.3523 28.8 27.8V4.2C28.8 3.64772 28.3523 3.2 27.8 3.2H4.2ZM7.34754 23.0596C7.34754 23.6118 7.79525 24.0596 8.34754 24.0596H23.4667V20.8357H10.7106V17.6279H20.2376V14.4069H10.7106V11.1643H23.4667V7.94044H8.34754C7.79525 7.94044 7.34754 8.38815 7.34754 8.94044V23.0596Z"></path></svg>
+      <svg class="footer__logo-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 12" id="emias-logo-label"><path fill-rule="evenodd" clip-rule="evenodd" d="M64.186 8.76923C64.7897 8.44344 65.3659 7.84615 65.7226 7.38461L68 8.93213C67.2317 10.0452 66.2165 10.8597 65.311 11.2941C63.9117 11.9728 62.2105 12 61.7989 12C59.3843 12 57.6008 11.1855 56.5307 10.0724C55.5703 9.06787 54.9667 7.62896 54.9667 6.02715C54.9667 4.20814 55.7624 2.87783 56.613 2.00905C58.2319 0.352941 60.2074 0 61.9635 0C63.2257 0 64.3507 0.162896 65.558 0.78733C66.6006 1.30317 67.314 1.95475 67.8354 2.60633L65.5031 4.20814C65.1464 3.77376 64.6251 3.33937 64.0488 3.06787C63.3354 2.74208 62.4848 2.68778 61.8538 2.68778C60.9208 2.68778 59.6587 2.85068 58.7532 3.77376C58.177 4.37104 57.8752 5.18552 57.8752 6C57.8752 6.92308 58.2593 7.7647 58.8904 8.33484C59.5764 8.95928 60.6465 9.28507 61.9086 9.28507C62.43 9.28507 63.3629 9.20362 64.186 8.76923ZM11.3333 11.7142H0V0.28565H10.7667V2.57136H2.83333V4.28565H7.93333V6.57136H2.83333V9.4285H11.3333V11.7142ZM26.0666 11.7142H23.2333V5.99993L19.8333 9.99993L16.4333 5.99993V11.7142H13.6V0.28565H15.3L19.8333 5.99993L24.3666 0.28565H26.0666V11.7142ZM31.1666 11.7142L36.8333 4.85708V11.7142H39.6666V0.28565H37.4L31.7333 7.14279V0.28565H28.9V11.7142H31.1666ZM54.4 11.7142H51.5666L50.4333 9.4285H45.3333L44.2 11.7142H41.3666L47.0333 0.28565H48.7333L54.4 11.7142ZM47.8833 4.28565L49.3 7.14279H46.4667L47.8833 4.28565Z"></path></svg>
+    </div>
+    <div class="footer__company-container">
+      <div class="footer__company">
+        <img src="./images/dit.png" alt="" class="footer__company-pic">
+        <p class="footer__company-text">Департамент информационных технологий</p>
+      </div>
+      <div class="footer__company">
+        <img src="./images/med.png" alt="" class="footer__company-pic">
+        <p class="footer__company-text">Департамент здравоохранения Москвы</p>
+      </div>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal__outer-container">
+      <svg class="modal__close-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" ><g stroke="none" stroke-width="1" fill-rule="evenodd"><g transform="translate(-1378 -143)" fill-rule="nonzero"><g transform="translate(1373 138)"><path d="M11.3137085,11.3137085 L11.3137085,4.31458016 C11.3147378,4.31399905 11.3147378,6.64704183 11.3137085,11.3137085 L18.3128368,11.3137085 C18.3134179,11.3147378 15.9803752,11.3147378 11.3137085,11.3137085 L11.3137085,18.3128368 C11.3126792,18.3134179 11.3126792,15.9803752 11.3137085,11.3137085 L4.31458016,11.3137085 C4.31399905,11.3126792 6.64704183,11.3126792 11.3137085,11.3137085 Z M10.3137085,10.3137085 L10.3137085,4.31458016 C10.3137085,3.761814 10.7575733,3.3137085 11.3137085,3.3137085 C11.8659932,3.3137085 12.3137085,3.75833936 12.3137085,4.31458016 L12.3137085,10.3137085 L18.3128368,10.3137085 C18.865603,10.3137085 19.3137085,10.7575733 19.3137085,11.3137085 C19.3137085,11.8659932 18.8690776,12.3137085 18.3128368,12.3137085 L12.3137085,12.3137085 L12.3137085,18.3128368 C12.3137085,18.865603 11.8698437,19.3137085 11.3137085,19.3137085 C10.7614237,19.3137085 10.3137085,18.8690776 10.3137085,18.3128368 L10.3137085,12.3137085 L4.31458016,12.3137085 C3.761814,12.3137085 3.3137085,11.8698437 3.3137085,11.3137085 C3.3137085,10.7614237 3.75833936,10.3137085 4.31458016,10.3137085 L10.3137085,10.3137085 Z" transform="rotate(45 11.314 11.314)"></path></g></g></g></svg>
+      <div class="modal__container">
+        <form class="modal__form">
+          <label class="modal__label" for="clinic">Поликлиника</label>
+          <select class="modal__input modal__input_field_clinic modal__input_type_select" name="clinic" required>
+
+          </select>
+          
+          <label class="modal__label" for="doctor">Врач</label>
+          <input type="text" class="modal__input modal__input_field_doctor modal__input_type_text" name="doctor">
+          <label class="modal__label" for="speciality">Специальность</label>
+          <select class="modal__input modal__input_field_speciality modal__input_type_select" name="speciality">
+
+          </select>
+          <label class="modal__label" for="room">Кабинет</label>
+          <input type="text" class="modal__input modal__input_field_room modal__input_type_text" name="room">
+          <label class="modal__label" for="time">Время</label>
+          <input type="time" class="modal__input modal__input_field_time modal__input_type_text" name="time">
+          <input type="submit" class="modal__input modal__input_field_submit button button_color_blue button_size_s" value="Сохранить">
+        </form>
+
+    </div>
+  </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
