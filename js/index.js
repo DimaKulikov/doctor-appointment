@@ -172,7 +172,6 @@ function updateInfo(event) {
 }
 
 function renderInfo() {
-  console.log(appointmentInfo);
   doctor.textContent = appointmentInfo.doctor;
   speciality.textContent = specialities[appointmentInfo.specialityID];
   room.textContent = appointmentInfo.room;
