@@ -1,1 +1,95 @@
 @import url(../fonts/Roboto/Roboto.css);
+
+/* Button */
+
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/_size/_s/button_size_s.css);
+@import url(../blocks/button/_color/_blue/button_color_blue.css);
+@import url(../blocks/button/_color/_red/button_color_red.css);
+
+/* Burger button */
+
+@import url(../blocks/burger-btn/burger-btn.css);
+@import url(../blocks/burger-btn/_bg/burger-btn_bg.css);
+@import url(../blocks/burger-btn/__bars/burger-btn__bars.css);
+@import url(../blocks/burger-btn/__bars/_size/_s/burger-btn__bars_size_s.css);
+
+/* Icon button */
+
+@import url(../blocks/icon-btn/icon-btn.css);
+@import url(../blocks/icon-btn/_type/_text/icon-btn_type_text.css);
+@import url(../blocks/icon-btn/__icon/icon-btn__icon.css);
+@import url(../blocks/icon-btn/__icon/_type/_text/icon-btn__icon_type_text.css);
+@import url(../blocks/icon-btn/__icon/_color/_black/icon-btn__icon_color_black.css);
+@import url(../blocks/icon-btn/__icon/_color/_blue/icon-btn__icon_color_blue.css);
+
+/* Page */
+
+@import url(../blocks/page/page.css);
+@import url(../blocks/page/__footer/page__footer.css);
+@import url(../blocks/page/__title/page__title.css);
+@import url(../blocks/page/__top-section/page__top-section.css);
+
+/* Header */
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__user/header__user.css);
+
+/* Splash */
+
+@import url(../blocks/splash/spalsh.css);
+@import url(../blocks/splash/__bottom-subtitle/splash__bottom-subtitle.css);
+@import url(../blocks/splash/__image/splash__image.css);
+@import url(../blocks/splash/__subtitle/splash__subtitle.css);
+@import url(../blocks/splash/__text-container/splash__text-container.css);
+@import url(../blocks/splash/__title/splash__title.css);
+
+/* Appointment controls  */
+
+@import url(../blocks/appointment-controls/appointment-controls.css);
+@import url(../blocks/appointment-controls/__date/appointment-controls__date.css);
+@import url(../blocks/appointment-controls/__menu/appointment-controls__menu.css);
+@import url(../blocks/appointment-controls/__new/appointment-controls__new.css);
+
+/* Appointment details */
+
+@import url(../blocks/appointment-details/appointment-details.css);
+@import url(../blocks/appointment-details/__button/appointment-details__button.css);
+@import url(../blocks/appointment-details/__clinic-name/appointment-details__clinic-name.css);
+@import url(../blocks/appointment-details/__doc-name/appointment-details__doc-name.css);
+@import url(../blocks/appointment-details/__doc-speciality/appointment-details__doc-speciality.css);
+@import url(../blocks/appointment-details/__more-btn/appointment-details__more-btn.css);
+@import url(../blocks/appointment-details/__more-icon/appointment-details__more-icon.css);
+@import url(../blocks/appointment-details/__subtitle/appointment-details__subtitle.css);
+@import url(../blocks/appointment-details/__text/appointment-details__text.css);
+
+/* Footer */
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__company-container/footer__company-container.css);
+@import url(../blocks/footer/__company-pic/footer__company-pic.css);
+@import url(../blocks/footer/__company-text/footer__company-text.css);
+@import url(../blocks/footer/__company/footer__company.css);
+@import url(../blocks/footer/__logo-container/footer__logo-container.css);
+@import url(../blocks/footer/__logo-text/footer__logo-text.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
+
+/* Loading screen */
+
+@import url(../blocks/loading-screen/loading-screen.css);
+@import url(../blocks/loading-screen/_hidden/loading-screen_hidden.css);
+@import url(../blocks/loading-screen/__spinner/loading-screen__spinner.css);
+
+/* Modal */
+
+@import url(../blocks/modal/modal.css);
+@import url(../blocks/modal/_open/modal_open.css);
+@import url(../blocks/modal/__close-btn/modal__close-btn.css);
+@import url(../blocks/modal/__container/modal__container.css);
+@import url(../blocks/modal/__input/modal__input.css);
+@import url(../blocks/modal/__input/_field/_submit/modal__input_field_submit.css);
+@import url(../blocks/modal/__input/_type/_select/modal__input_type_select.css);
+@import url(../blocks/modal/__input/_type/_text/modal__input_type_text.css);
+@import url(../blocks/modal/__label/modal__label.css);
+@import url(../blocks/modal/__outer-container/modal__outer-container.css);

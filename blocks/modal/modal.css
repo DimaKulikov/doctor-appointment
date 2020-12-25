@@ -1,0 +1,15 @@
+.modal {
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* padding: 8px; */
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: rgba(0,0,0,.7);
+  transition: height .05s;
+}

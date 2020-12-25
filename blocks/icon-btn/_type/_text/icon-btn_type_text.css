@@ -1,0 +1,10 @@
+.icon-btn_type_text {
+  padding: 0 12px;  
+  border: 1px solid rgba(32,106,218,.5);
+  border-radius: 8px;
+  justify-content: flex-start;
+  width: auto;  
+  font-size: 16px;
+  font-family: roboto, sans-serif;  
+  color: #206ada;
+}

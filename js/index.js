@@ -1,5 +1,5 @@
 //page elements
-let showBtn = document.querySelector('.menu-btn'),
+let showBtn = document.querySelector('.burger-btn'),
   form = document.forms[0],
   speciality = document.querySelector('.appointment-details__doc-speciality'),
   doctor = document.querySelector('.appointment-details__doc-name'),

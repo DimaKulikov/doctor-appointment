@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./pages/index.css">
   <link rel="stylesheet" href="dev.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 <body class="page">
   <div class="loading-screen">
@@ -15,10 +16,12 @@
   <header class="header">
     <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="none" viewBox="0 0 32 32" id="emias-logo"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V30C0 31.1046 0.895431 32 2 32H30C31.1046 32 32 31.1046 32 30V2C32 0.895431 31.1046 0 30 0H2ZM4.2 3.2C3.64772 3.2 3.2 3.64772 3.2 4.2V27.8C3.2 28.3523 3.64772 28.8 4.2 28.8H27.8C28.3523 28.8 28.8 28.3523 28.8 27.8V4.2C28.8 3.64772 28.3523 3.2 27.8 3.2H4.2ZM7.34754 23.0596C7.34754 23.6118 7.79525 24.0596 8.34754 24.0596H23.4667V20.8357H10.7106V17.6279H20.2376V14.4069H10.7106V11.1643H23.4667V7.94044H8.34754C7.79525 7.94044 7.34754 8.38815 7.34754 8.94044V23.0596Z" fill="currentColor"></path></svg>
     <div class="header__user">Екатерина</div>
-    <button class="menu-btn header__menu-btn"><div class="menu-btn__bars"></div></button>
+    <button class="burger-btn header__burger-btn">
+      <div class="burger-btn__bars"></div>
+    </button>
   </header>
   <main class="main">
-    <section class="page__top">
+    <section class="page__top-section">
       <div class="splash">
         <div class="splash__text-container">
           <h2 class="splash__title">Если у вас симптомы ОРВИ, больше не нужно идти в поликлинику!</h2>
@@ -31,8 +34,8 @@
     </section>
     <section class="appointment-controls">
       <div class="appointment-controls__date">
-        <button class="menu-btn menu-btn_bg">
-          <div class="menu-btn__bars menu-btn__bars_s"></div>
+        <button class="burger-btn burger-btn_bg">
+          <div class="burger-btn__bars burger-btn__bars_size_s"></div>
         </button>
         <button class="icon-btn"><svg class="icon-btn__icon icon-btn__icon_color_blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="calendar"><g id="calendar_icons/system/calendar" stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M51.2,2 L57.6,2 C61.1346224,2 64,4.5072054 64,7.6 L64,56.4 C64,59.4927946 61.1346224,62 57.6,62 L6.4,62 C2.8653776,62 4.328664e-16,59.4927946 0,56.4 L1.77635684e-15,7.6 C1.34349044e-15,4.5072054 2.8653776,2 6.4,2 L12.8,2 L12.8,9 C12.8,10.5463973 14.2326888,11.8 16,11.8 C17.7673112,11.8 19.2,10.5463973 19.2,9 L19.2,2 L44.8,2 L44.8,9 C44.8,10.5463973 46.2326888,11.8 48,11.8 C49.7673112,11.8 51.2,10.5463973 51.2,9 L51.2,2 Z M7.4,17.4 C6.84771525,17.4 6.4,17.8477153 6.4,18.4 L6.4,55.4 C6.4,55.9522847 6.84771525,56.4 7.4,56.4 L56.6,56.4 C57.1522847,56.4 57.6,55.9522847 57.6,55.4 L57.6,18.4 C57.6,17.8477153 57.1522847,17.4 56.6,17.4 L7.4,17.4 Z" id="calendar_Mask" fill-rule="nonzero"></path></g></svg></button>
       </div>

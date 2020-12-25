@@ -1,0 +1,30 @@
+.burger-btn__bars {
+  position: relative;
+  border-radius: 2px;
+  background-color: black;
+  margin: auto;
+  width: 20px;
+  height: 2px;  
+}
+
+.burger-btn__bars::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -6px;
+  border-radius: 2px;
+  background-color: black;
+  width: 20px;
+  height: 2px;
+}
+
+.burger-btn__bars::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 4px;
+  border-radius: 2px;
+  background-color: black;
+  width: 20px;
+  height: 2px;
+}

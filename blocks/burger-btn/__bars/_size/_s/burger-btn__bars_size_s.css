@@ -1,0 +1,3 @@
+.burger-btn__bars_size_s {width: 16px;}
+.burger-btn__bars_size_s::before {width: 16px; top: -5px}
+.burger-btn__bars_size_s::after {width: 16px; top: 3px}

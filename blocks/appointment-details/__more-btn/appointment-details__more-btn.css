@@ -1,0 +1,11 @@
+.appointment-details__more-btn {
+  margin: 16px 0;
+  padding: 0;
+  background: none;
+  border: none;
+  color: #206ada;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}

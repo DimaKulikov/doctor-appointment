@@ -1,0 +1,9 @@
+.header {
+  position: relative;
+  height: 64px;
+  box-shadow: 0 4px 24px rgba(85,118,202,.1);
+  background-color: white;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,9 @@
+.splash {
+  margin-bottom: 40px;
+  padding: 16px 24px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #219653;
+  box-shadow: 0 4px 32px rgba(33,150,83,.4);
+}

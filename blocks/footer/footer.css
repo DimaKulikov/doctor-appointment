@@ -1,0 +1,6 @@
+.footer {
+  overflow: hidden;
+  padding: 32px 16px 48px;
+  background-color: rgb(17, 17, 17);
+  border-radius: 16px 16px 0 0 ;
+}

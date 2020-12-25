@@ -1,0 +1,11 @@
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;  
+  cursor: pointer;
+}
