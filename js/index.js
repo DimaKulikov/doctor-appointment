@@ -29,7 +29,7 @@ import { specialities } from './specialities.js';
 
 //page elements
 let showBtn = document.querySelector('.burger-btn'),
-  form = document.forms[0],
+  form = document.querySelector('form[name=appointmentInfoFrom]'),
   speciality = document.querySelector('.appointment-details__doc-speciality'),
   doctor = document.querySelector('.appointment-details__doc-name'),
   time = document.querySelector('.appointment-details__time'),
