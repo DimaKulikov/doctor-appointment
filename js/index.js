@@ -122,17 +122,14 @@ function getClosestClinic() {
     const longitude = position.coords.longitude;
     let minDistance = 99999;
     let closestClinicID;
-    console.log(latitude, longitude)
 
     clinics.forEach((el, i) => {
       let distance = PythagorasEquirectangular(latitude, longitude, clinics[i].latitude, clinics[i].longitude);
-      console.log(clinics[i].latitude);
       if (minDistance > distance) {
         minDistance = distance;
         closestClinicID = i;
       }
     });
-    console.log(/*clinics[*/closestClinicID/*].name*/);
     appointmentInfo.clinicID = closestClinicID;
     renderInfo();
   }
