@@ -122,7 +122,9 @@ function getClosestClinic() {
         closestClinicID = i;
       }
     });
-    appointmentInfo.clinicID = closestClinicID;
+    appointmentInfo.clinicID = closestClinicID.toString();
+    setLocalStorage();
+
   }
 
   function error() {
@@ -169,7 +171,8 @@ function updateInfo(event) {
   setLocalStorage();
 }
 
-function renderInfo(){
+function renderInfo() {
+  console.log(appointmentInfo);
   doctor.textContent = appointmentInfo.doctor;
   speciality.textContent = specialities[appointmentInfo.specialityID];
   room.textContent = appointmentInfo.room;
