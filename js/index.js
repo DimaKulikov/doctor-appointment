@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', hideSpinner, false);
 // Functions 
 function getClosestClinic() {
   if (!navigator.geolocation) {
-    alert('Geolocation is not supported by your browser');
+    return
   } else {
     navigator.geolocation.getCurrentPosition(success, error);
   }
@@ -131,7 +131,6 @@ function getClosestClinic() {
   }
 
   function error() {
-    alert('Unable to get GPS location');
   }
 
   function getDistanceBetween(lat1, lon1, lat2, lon2) {
