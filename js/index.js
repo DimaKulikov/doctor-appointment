@@ -1,3 +1,30 @@
+/*------------------------
+
+Functionality:
+* Let the user enter custom data to these fields:
+  - Speciality
+  - Doctor name
+  - Time of appointment
+  - Room
+  - Clinic
+
+* Entered data is saved to LocalStorage to be kept between page reloads
+
+* On page load:
+  - Get current date and day of the week and display them on page
+  - Check if any previously stored data exists (stored AppointmentInfo). If it does load it into memory (local AppointmentInfo)
+  - Get user gps location. If it's available, find the closest clinic, save it to local appointmentInfo and update stored appointmentInfo
+  - Render local appointmentInfo
+  - When any changes to local appointmentInfo are made, render them and save to LocalStorage
+
+*
+To decide:
+* Show stored OR current time on page on load. Subsequently - store time in localStorage or not (for now the time is stored, current time shows in the input)
+
+------------------------*/
+
+
+
 //page elements
 let showBtn = document.querySelector('.burger-btn'),
   form = document.forms[0],
