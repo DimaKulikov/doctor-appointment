@@ -24,7 +24,10 @@ To decide:
 * Show stored OR current time on page on load. Subsequently - store time in localStorage or not (for now the time is stored, current time shown in the input field)
 
 TO DO:
-Single edit forms for each field. The edit form is called when the user clicks on the respective fields on the page.
+done - Single edit forms for each field. The edit form is called when the user clicks on the respective fields on the page.
+Fix the closest clinic not displaying after page reload if a different clinic is saved to LocalStorage.
+
+
 ------------------------*/
 
 
