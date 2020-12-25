@@ -69,6 +69,7 @@
   border-radius: 8px;
   display: flex;
   justify-content: center;  
+  cursor: pointer;
 }
 
 .menu-btn_bg {
