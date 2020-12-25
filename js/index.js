@@ -23,6 +23,8 @@ Functionality:
 To decide:
 * Show stored OR current time on page on load. Subsequently - store time in localStorage or not (for now the time is stored, current time shown in the input field)
 
+TO DO:
+Single edit forms for each field. The edit form is called when the user clicks on the respective fields on the page.
 ------------------------*/
 
 
@@ -30,8 +32,7 @@ import { clinics } from './clinics.js';
 import { specialities } from './specialities.js';
 
 //page elements
-let showBtn = document.querySelector('.burger-btn'),
-  inputForm = document.querySelector('form[name=appointmentInfoFrom]'),
+let inputForm = document.querySelector('form[name=appointmentInfoFrom]'),
   speciality = document.querySelector('.appointment-details__doc-speciality'),
   doctor = document.querySelector('.appointment-details__doc-name'),
   time = document.querySelector('.appointment-details__time'),
@@ -39,6 +40,8 @@ let showBtn = document.querySelector('.burger-btn'),
   room = document.querySelector('.appointment-details__room'),
   clinicName = document.querySelector('.appointment-details__clinic-name'),
   clinicType = document.querySelector('.appointment-details__clinic-type');
+let editableFields = document.querySelectorAll('[data-fields]');
+
 
 //modal elements
 let modal = document.querySelector('.modal'),
@@ -48,6 +51,7 @@ let modal = document.querySelector('.modal'),
   inputSpeciality = document.querySelector('.modal__input_field_speciality'),
   inputRoom = document.querySelector('.modal__input_field_room'),
   inputTime = document.querySelector('.modal__input_field_time');
+let allInputFields = modal.querySelectorAll('[for],[for]+*'); //labels + fields
 
 //appointment info
 let appointmentInfo = {
@@ -88,7 +92,10 @@ specialities.forEach((el, index) => {
 
 
 // Event Listeners
-showBtn.addEventListener('click', showModal);
+
+editableFields.forEach(el => {
+  el.addEventListener('click', showModal); //showBtn.addEventListener('click', showModal);
+})
 closeBtn.addEventListener('click', hideModal);
 inputForm.addEventListener('submit', updateInfo);
 document.addEventListener('DOMContentLoaded', hideSpinner, false);
@@ -171,10 +178,30 @@ function renderInfo(){
   time.textContent = appointmentInfo.time;
 }
 
+function showModal(event) {
+  let eventTarget = this || event.target;
+  let chosenFields = eventTarget.dataset.fields.split(',');
+  chosenFields.forEach(el => {
 
+  })
+  // choose fields to show
+  // ["clinic", "doctor", "speciality", "room", "time"]
+  allInputFields.forEach(node => {
+    if (node.hasAttribute('for')) {
+      if (!chosenFields.includes(node.attributes.for.value)) {
+        node.style.display = 'none';
+      }
+    } else {
+      if (!chosenFields.includes(node.attributes.name.value)) {
+        node.style.display = 'none';
+      }
+    }
 
-function showModal() {  
+  })
+  
+  //label.attributes.for.value
   modal.classList.add('modal_open');
+
   inputClinic.value = appointmentInfo.clinicID;
   inputDoctor.value = appointmentInfo.doctor;
   inputRoom.value = appointmentInfo.room;
@@ -196,8 +223,10 @@ function showModal() {
 
 function hideModal() {
   modal.classList.remove('modal_open');
+  allInputFields.forEach(node => {
+    node.removeAttribute('style');
+  })
 }
-
 
 function hideSpinner(){
   document.querySelector('.loading-screen').classList.add('loading-screen_hidden');
