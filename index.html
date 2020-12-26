@@ -16,7 +16,7 @@
   <header class="header">
     <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="none" viewBox="0 0 32 32" id="emias-logo"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2V30C0 31.1046 0.895431 32 2 32H30C31.1046 32 32 31.1046 32 30V2C32 0.895431 31.1046 0 30 0H2ZM4.2 3.2C3.64772 3.2 3.2 3.64772 3.2 4.2V27.8C3.2 28.3523 3.64772 28.8 4.2 28.8H27.8C28.3523 28.8 28.8 28.3523 28.8 27.8V4.2C28.8 3.64772 28.3523 3.2 27.8 3.2H4.2ZM7.34754 23.0596C7.34754 23.6118 7.79525 24.0596 8.34754 24.0596H23.4667V20.8357H10.7106V17.6279H20.2376V14.4069H10.7106V11.1643H23.4667V7.94044H8.34754C7.79525 7.94044 7.34754 8.38815 7.34754 8.94044V23.0596Z" fill="currentColor"></path></svg>
     <div class="header__user">Екатерина</div>
-    <button class="burger-btn header__burger-btn" data-fields="clinic,doctor,speciality,room,time">
+    <button class="burger-btn header__burger-btn">
       <div class="burger-btn__bars"></div>
     </button>
   </header>
@@ -39,7 +39,8 @@
         </button>
         <button class="icon-btn"><svg class="icon-btn__icon icon-btn__icon_color_blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="calendar"><g id="calendar_icons/system/calendar" stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M51.2,2 L57.6,2 C61.1346224,2 64,4.5072054 64,7.6 L64,56.4 C64,59.4927946 61.1346224,62 57.6,62 L6.4,62 C2.8653776,62 4.328664e-16,59.4927946 0,56.4 L1.77635684e-15,7.6 C1.34349044e-15,4.5072054 2.8653776,2 6.4,2 L12.8,2 L12.8,9 C12.8,10.5463973 14.2326888,11.8 16,11.8 C17.7673112,11.8 19.2,10.5463973 19.2,9 L19.2,2 L44.8,2 L44.8,9 C44.8,10.5463973 46.2326888,11.8 48,11.8 C49.7673112,11.8 51.2,10.5463973 51.2,9 L51.2,2 Z M7.4,17.4 C6.84771525,17.4 6.4,17.8477153 6.4,18.4 L6.4,55.4 C6.4,55.9522847 6.84771525,56.4 7.4,56.4 L56.6,56.4 C57.1522847,56.4 57.6,55.9522847 57.6,55.4 L57.6,18.4 C57.6,17.8477153 57.1522847,17.4 56.6,17.4 L7.4,17.4 Z" id="calendar_Mask" fill-rule="nonzero"></path></g></svg></button>
       </div>
-      <button class="appointment-controls__new button button_color_blue">Новая запись</button>
+      <button class="appointment-controls__new button button_color_blue"
+        data-fields="clinic,doctor,speciality,room,time">Новая запись</button>
       <div class="appointment-controls__menu">
         <button class="icon-btn"><svg class="icon-btn__icon icon-btn__icon_color_blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="nav"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1V3C4 3.55228 3.55228 4 3 4H1C0.447715 4 0 3.55228 0 3V1ZM0 7C0 6.44772 0.447715 6 1 6H3C3.55228 6 4 6.44772 4 7V9C4 9.55229 3.55228 10 3 10H1C0.447715 10 0 9.55229 0 9V7ZM1 12C0.447715 12 0 12.4477 0 13V15C0 15.5523 0.447715 16 1 16H3C3.55228 16 4 15.5523 4 15V13C4 12.4477 3.55228 12 3 12H1ZM6 1C6 0.447715 6.44772 0 7 0H9C9.55229 0 10 0.447715 10 1V3C10 3.55228 9.55229 4 9 4H7C6.44772 4 6 3.55228 6 3V1ZM7 6C6.44772 6 6 6.44772 6 7V9C6 9.55229 6.44772 10 7 10H9C9.55229 10 10 9.55229 10 9V7C10 6.44772 9.55229 6 9 6H7ZM6 13C6 12.4477 6.44772 12 7 12H9C9.55229 12 10 12.4477 10 13V15C10 15.5523 9.55229 16 9 16H7C6.44772 16 6 15.5523 6 15V13ZM13 0C12.4477 0 12 0.447715 12 1V3C12 3.55228 12.4477 4 13 4H15C15.5523 4 16 3.55228 16 3V1C16 0.447715 15.5523 0 15 0H13ZM12 7C12 6.44772 12.4477 6 13 6H15C15.5523 6 16 6.44772 16 7V9C16 9.55229 15.5523 10 15 10H13C12.4477 10 12 9.55229 12 9V7ZM13 12C12.4477 12 12 12.4477 12 13V15C12 15.5523 12.4477 16 13 16H15C15.5523 16 16 15.5523 16 15V13C16 12.4477 15.5523 12 15 12H13Z"></path></svg></button>
       </div>
