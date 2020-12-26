@@ -14,7 +14,7 @@ The original web page was used as a layout prototype, but reworked internally to
 * The list of clinics and the list of specialities to choose from are kept hardcoded (for now) as arrays.
 * On page load user location is requested to determine which clinic from the list they are currently physically in (or just closest to). If successful, the closest clinic is displayed on the page as currently chosen clinic.
 ---
-(*Demo*)[https://dimakulikov.github.io/emias/]
+(Demo)[https://dimakulikov.github.io/emias/]
 
 
 
