@@ -1,5 +1,5 @@
-
 /*------------------------
+
 
 Functionality:
 * Let the user enter custom data to these fields:
@@ -17,7 +17,7 @@ Functionality:
   3. Get user gps location. If it's available, find the closest clinic, save it to local appointmentInfo and update stored appointmentInfo
   4. Render local appointmentInfo
   5. Populate select fields with options from hardcoded data
-  
+
 * When any changes to local appointmentInfo are made, render them and save to LocalStorage
 
 To decide:
@@ -97,7 +97,7 @@ specialities.forEach((el, index) => {
 // Event Listeners
 
 editableFields.forEach(el => {
-  el.addEventListener('click', showModal); //showBtn.addEventListener('click', showModal);
+  el.addEventListener('click', showModal);
 })
 closeBtn.addEventListener('click', hideModal);
 inputForm.addEventListener('submit', updateInfo);
@@ -127,13 +127,15 @@ function getClosestClinic() {
     });
     appointmentInfo.clinicID = closestClinicID.toString();
     setLocalStorage();
-
   }
 
   function error() {
   }
 
   function getDistanceBetween(lat1, lon1, lat2, lon2) {
+    function deg2Rad(deg) {
+      return deg * Math.PI / 180;
+    }
     lat1 = deg2Rad(lat1);
     lat2 = deg2Rad(lat2);
     lon1 = deg2Rad(lon1);
@@ -143,11 +145,7 @@ function getClosestClinic() {
       y = (lat2 - lat1),
       d = Math.sqrt(x * x + y * y) * R;
     return d;
-  }
-
-  function deg2Rad(deg) {
-    return deg * Math.PI / 180;
-  }
+  }  
 }
 
 function setLocalStorage(){
@@ -185,11 +183,7 @@ function renderInfo() {
 function showModal(event) {
   let eventTarget = this || event.target;
   let chosenFields = eventTarget.dataset.fields.split(',');
-  chosenFields.forEach(el => {
-
-  })
   // choose fields to show
-  // ["clinic", "doctor", "speciality", "room", "time"]
   allInputFields.forEach(node => {
     if (node.hasAttribute('for')) {
       if (!chosenFields.includes(node.attributes.for.value)) {
