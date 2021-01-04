@@ -6,7 +6,7 @@
  The project was made for strictly educational purposes, I do not own any of the logos or pictures used on the page. All right belong to [emias.info](emias.info)
  
 ## Why was this made
-The project was conceived and made as a means of practicing HTML/CSS layout and JS skills.
+The project was made as a means of practicing HTML/CSS layout skills and JS skills.
 
 ## How was this made
 The original web page was used as a layout prototype, but reworked internally to be in line with BEM design principles. JS was written from scratch (except for the haversine formula for caclucating the distance)
@@ -16,6 +16,3 @@ The original web page was used as a layout prototype, but reworked internally to
 * The list of clinics and the list of specialities to choose from are kept hardcoded (for now) as arrays.
 * On page load user location is requested to determine which clinic from the list they are currently physically in (or just closest to). If successful, the closest clinic is displayed on the page as currently chosen clinic. 
 * Current date and the day of the week are automatically filled in.
-
-
-
