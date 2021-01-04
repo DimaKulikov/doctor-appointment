@@ -1,6 +1,6 @@
 # Doctor appointment demonstration
 
-[Demo](https://dimakulikov.github.io/emias/)
+[Demo](https://dimakulikov.github.io/doctor-appointment/)
 
 ## Disclaimer
  The project was made for strictly educational purposes, I do not own any of the logos or pictures used on the page. All right belong to [emias.info](emias.info)
