@@ -3,10 +3,10 @@
 [Demo](https://dimakulikov.github.io/emias/)
 
 ## Disclaimer
- The project was made for strictly educational purposes, I do not own any of the logos or pictures used on the page. All right belong to the [emias.info](emias.info)
+ The project was made for strictly educational purposes, I do not own any of the logos or pictures used on the page. All right belong to [emias.info](emias.info)
  
 ## Why was this made
-The project was conceived and made as a means of practicing HTML/CSS layout and JS skills. It could also potentially come in handy for somebody who wants to convince somebody else that they have an appointment with a doctor when if fact they don't. 
+The project was conceived and made as a means of practicing HTML/CSS layout and JS skills.
 
 ## How was this made
 The original web page was used as a layout prototype, but reworked internally to be in line with BEM design principles. JS was written from scratch (except for the haversine formula for caclucating the distance)
