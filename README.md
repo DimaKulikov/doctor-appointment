@@ -14,7 +14,8 @@ The original web page was used as a layout prototype, but reworked internally to
 ## How it works
 * The "New appointment" button brings up a modal with input fields for all the editable fields on the page. On submitting the form the data is displayed on the page and also saved to LocalStorage of the browser to be kept between page reloads. All editable fields can be clicked individually on the page itself to also bring up a modal for editing that single field. 
 * The list of clinics and the list of specialities to choose from are kept hardcoded (for now) as arrays.
-* On page load user location is requested to determine which clinic from the list they are currently physically in (or just closest to). If successful, the closest clinic is displayed on the page as currently chosen clinic. Current date and the day of the week are automatically filled in
+* On page load user location is requested to determine which clinic from the list they are currently physically in (or just closest to). If successful, the closest clinic is displayed on the page as currently chosen clinic. 
+* Current date and the day of the week are automatically filled in.
 
 
 
