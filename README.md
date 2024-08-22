@@ -3,10 +3,10 @@
 [Demo](https://dimakulikov.github.io/doctor-appointment/)
 
 ## Disclaimer
- The project was made for strictly educational purposes, I do not own any of the logos or pictures used on the page. All right belong to [emias.info](emias.info)
+ The project was made for strictly educational purposes, I do not own any of the logos or pictures used on the page. All rights belong to [emias.info](emias.info)
  
 ## Why was this made
-The project was made as a means of practicing HTML/CSS layout skills and JS skills.
+The project was made as a means of practicing HTML/CSS layout skills and JS skills and as a helpful service that my friend working as a pharmaceutical sales representative can use. 
 
 ## How was this made
 The original web page was used as a layout prototype, but reworked internally to be in line with BEM design principles. JS was written from scratch (except for the haversine formula for caclucating the distance)
